@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.intro, h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.intro .name{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.about, .skills, .projects, .contact, .education, .certification{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+.about, .projects, .certification{
+    background-color: rgba(77, 143, 214, 0.314);
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;  
+   
+}
+header, footer{
+    background-color: #0d6efd;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header .navbar .nav-link {
+    color: white !important; 
+}
+header .navbar .nav-link:hover, .folio {
+    color: black !important; 
+    
+}
+header .navbar-brand {
+    color: white !important;
+}
+
+header .navbar-toggler {
+    color: white; 
+}
+header, section{
+    border-bottom: 2px solid black;
+}
+.profile img{
+    border-style: solid;
+    width: 210px;
+    height: 250px;
+}
+.about h5{
+    text-align: justify;
+    line-height: 35px;
+}
+.skills .card {
+    width: 150px;
+    height: 200px;
+}
+.skills .card img {
+    height: 100%;
+    padding: 10px;
+    
+}
+.card{
+    overflow: hidden;
+}
+.card img{
+    transition-duration: 1s;
+}
+.card-body{
+    background-color: rgba(212, 200, 200, 0.361);
+}
+.card img:hover{
+    transform: scale(1.1);
+}
+.education .card{
+    width: 350px;
+    height: 450px;
+}
+.education .card img{
+    padding: 10px;
+}
+.animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+footer p{
+    margin-bottom: 0;
+}
